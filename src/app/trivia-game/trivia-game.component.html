@@ -1,1 +1,34 @@
-<p>trivia-game works!</p>
+@if(!gameTriviaQuestions().length){
+@if(winner()){
+<div class="card-game">
+  <h2 style="font-weight: 400; font-style: italic; text-align: center;"> Felicidades ganaste la trivia de <strong>Privex
+      Aviation</strong>
+  </h2>
+  <p style="text-align: center;">Has respondido correctamente todas las preguntas.</p>
+  <button (click)="startGame()" class="button">Empezar a jugar</button>
+</div>
+}@else {
+<div class="card-game">
+  <h2 style="font-weight: 400; font-style: italic; margin-bottom: 0; text-align: center;"> Bienvenido a la trivia de
+    <strong>Privex
+      Aviation</strong>
+  </h2>
+  <p style="text-align: center;">Responde las preguntas y demuestra tus conocimientos sobre la aviación.</p>
+  <button (click)="startGame()" class="button">Empezar a jugar</button>
+</div>
+}
+
+}@else {
+@if(gameEnded()){
+<div class="card-game">
+  <h2 style="font-weight: 400; font-style: italic;"> Juego <strong>Terminado</strong>
+  </h2>
+</div>
+}
+<app-card-question />
+@if(!gameEnded()){
+<div class="card-game">
+  <button (click)="endGame()" class="button">Terminar juego</button>
+</div>
+}
+}

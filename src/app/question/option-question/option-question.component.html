@@ -1,1 +1,3 @@
-<p>option-question works!</p>
+<button class="option" [ngClass]="{'error': WrongAnswer}" (click)="selectOption()">
+  <span>{{option()}}</span>
+</button>
