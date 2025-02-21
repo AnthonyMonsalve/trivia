@@ -1,0 +1,20 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #fff;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 35px;
+}
+
+h1{
+  color: #001c42;
+  text-align: center;
+}
+
+#logo{
+  display: block;
+  margin: 20px;
+}
