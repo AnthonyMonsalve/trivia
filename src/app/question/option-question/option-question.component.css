@@ -31,4 +31,9 @@
   .option:hover {
     background: #fff;
   }
+
+  .option {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
 }
