@@ -1,3 +1,3 @@
-<button class="option" [ngClass]="{'error': WrongAnswer}" (click)="selectOption()">
+<button class="option" [ngClass]="{'error': WrongAnswer}" (click)="selectOption($event)">
   <span>{{option()}}</span>
 </button>

@@ -16,7 +16,12 @@ export class OptionQuestionComponent {
 
   constructor(private triviaGameService: TriviaGameService) {}
 
-  selectOption() {
+  selectOption(e: Event) {
+    if (e.target instanceof HTMLElement) {
+      e.target.blur();
+      console.log('Option selected:', e.target.blur());
+    }
+
     if (this.option() === undefined || this.gameEnded()) {
       return;
     }

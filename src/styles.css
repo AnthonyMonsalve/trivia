@@ -3,8 +3,21 @@
   font-family: "Open Sans", serif;
 }
 
-body{
+body {
   background-color: #e1e3e8;
   margin: 0;
   padding: 0;
+}
+
+button {
+  outline: none;
+  /* Elimina el contorno predeterminado */
+}
+
+/* Eliminar sombreado de texto para todos los elementos */
+::selection {
+  background: transparent;
+  /* Hace que el fondo sea transparente */
+  color: inherit;
+  /* Mantiene el color del texto igual */
 }
